@@ -1,5 +1,5 @@
 # - Image de base pour le conteneur PX4
-FROM px4io/px4-dev-simulation-jammy:v1.14
+FROM px4io/px4-dev-simulation-jammy:latest
 
 # - Définir le répertoire de travail
 WORKDIR /workspace

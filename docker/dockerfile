@@ -1,0 +1,8 @@
+# - Image de base pour le conteneur PX4
+FROM px4io/px4-dev-simulation-jammy:v1.14
+
+# - Définir le répertoire de travail
+WORKDIR /workspace
+
+# - Installer des bibliothèques et outils supplémentaires nécessaires pour le développement et la simulation
+RUN pip3 install --no-cache-dir pymavlink mavsdk

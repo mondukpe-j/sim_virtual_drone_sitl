@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  px4-sitl:
+    build: .
+    container_name: px4_sitl_cont
+    working_dir: /workspace
+    volumes:
+      - ../src/:/workspace
+    stdin_open: true
+    tty: true
+    ports:
+      - "14540:14540/udp" # Port de connexion pour MAVSDK / API
+      - "14550:14550/udp" # Port de connexion pour la station sol (QGroundControl)
+
+    
+      
+
+

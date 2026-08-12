@@ -1,0 +1,4 @@
+# .gitignore
+
+# Ignorer le dossier code/PX4-Autopilot
+code/PX4-Autopilot/

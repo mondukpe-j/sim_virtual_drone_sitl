@@ -12,6 +12,7 @@ services:
     ports:
       - "14540:14540/udp" # Port de connexion pour MAVSDK / API
       - "14550:14550/udp" # Port de connexion pour la station sol (QGroundControl)
+      - "14541:14541/udp"
 
     
       

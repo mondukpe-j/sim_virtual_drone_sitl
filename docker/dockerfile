@@ -6,3 +6,9 @@ WORKDIR /workspace
 
 # - Installer des bibliothèques et outils supplémentaires nécessaires pour le développement et la simulation
 RUN pip3 install --no-cache-dir pymavlink mavsdk
+
+
+# Outils réseau utiles pour déboguer MAVLink
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    netcat-openbsd \
+    && rm -rf /var/lib/apt/lists/*

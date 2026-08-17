@@ -6,7 +6,7 @@ services:
     container_name: px4_sitl_cont
     working_dir: /workspace
     volumes:
-      - ../src/:/workspace
+      - ../code/:/workspace
     stdin_open: true
     tty: true
     ports:

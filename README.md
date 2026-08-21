@@ -6,7 +6,6 @@ Pile de simulation PX4 avec un client MAVLink bas niveau en C et un script équi
 ## Construire et lancer le conteneur
 
 ```bash
-cd volet1/
 docker compose build
 docker compose run px4-sitl
 ```
